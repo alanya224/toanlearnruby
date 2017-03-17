@@ -1,0 +1,92 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Ruby on Rails</title>
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body onload="time()">
+    <div id="clock"></div>
+    <hr>
+
+    <div id="main-menu">
+      <ul>
+        <li><a href="index.html" title="Home">HOME</a></li>
+        <li><a href="" title="">LEARNING RAILS</a></li>
+        <li><a href="HCJ.html" title="">LEARNING HTML/CSS/JV</a></li>
+        <li><a href="" title="">LEARNING BOOTSTRAP</a></li>
+        <li><a  href="" title="CSS REEL About page">ABOUT ME</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <ol id="title">
+        <li>
+          Course Structure, Overview and best way to use this course (lecture 2)
+          <ul class="list">
+            <li>Using discussion area</li>
+            <li>Using Q&A area </li>
+            <li>Using Browse Q&A in a particular video</li>
+          </ul>
+        </li>
+        <li>
+          Ruby on Rails Development Environment overview (lecture 3)
+          <ul class="list">
+            <li>You will need to set up a development enviroment so you can build web apps using Ruby on Rails</li>
+            <li>You will need just one development environment for this</li>
+            <li>You will have multiple options for develoopment environments
+              <ul class="inner_list">
+                <li>Online cloud based IDE's - Browser Based IDE (Recommended for starter)
+                  <ul>
+                    <li>All your code is done in the cloud, using a browser based development environment</li>
+                    <li>System independent, you could be using Mac, Windows, Linux doesn't matter</li>
+                    <li>Installation of what we need is already present, very little to no setup required, simply sign-up and go</li>
+                  </ul>
+                </li>
+                <li>Local development environment  (Not recommend for starter)
+                  <ul>
+                    <li>Your computer's file-system (Mac, Unix, Windows)</li>
+                    <li>Requires installation of the framework and components that are neccecsary to develop code</li>
+                    <li>Can have installation issues, cause frustration, will not work properly with Windows (cons)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Introduction to Section 2 and Ruby language
+          <ul class="list">
+            <li>What is ruby? - A dynamic, object-oriented programing language, designed to make programmer happy</li>
+            <li>Ruby Resource: <a href="https://www.ruby-lang.org" target="_blank">www.ruby-lang.org</a></li>
+            <li>First ruby program - Hello World
+              <ul class="inner_list">
+                <li>Helloworld.rb - Thực hiện lệnh puts
+                  <p class="ex_code">
+                    puts "Hello World"
+                  </p>
+                </li>
+                <li>Helloworldstring.rb - Thực hiện lệnh puts thông qua khai báo string
+                  <p class="ex_code">
+                    hello = "Hello World!"<br>
+		                puts "Hello World!"
+                  </p>
+                </li>
+                <li>Helloworldmethod.rb - Thực hiện bằng cách define method để puts string
+                  <p class="ex_code">
+                    def greeting(hello)<br>
+                      puts hello<br>
+                    end<br>
+                    greeting("Hello World!")
+                  </p>
+
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+/****HEADER****/
+
+#clock {
+  position: relative;
+  text-align: right;
+  margin-top: 10px;
+}
+#main-menu {
+  position: relative;
+  background-color: #68f442;
+  padding-bottom: 40px;
+}
+#main-menu ul {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+#main-menu ul li {
+  display: inline-block;
+  float: left;
+  border-left: 1px solid #000;
+}
+#main-menu ul li a {
+  font: 600 14px 'Open Sans', sans-serif;
+  color: #ff0000;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+/****END OF HEADER****/
+#title {
+  font-weight: bold;
+  color: #FF0000
+}
+#title>li {
+  margin-bottom: 10px;
+}
+.list {
+  font-weight: normal;
+  color: #3399ff;
+  text-decoration: inherit;
+}
+.inner_list {
+  color: #ff0066
+}
+.inner_list ul {
+  color: #006600
+}
+.inner_list ul li {
+  position: relative;
+}
+p .ex_code {
+  position: absolute;
+  padding: 2px;
+  border: #ff0000 solid 2px;
+  right: 0;
+  top: 0;
+  /*background-color: #838487;*/
+  display: block;
+}
+/*.inner_list li::after .ex_code{
+  display: block;
+}*/
