@@ -49,15 +49,8 @@
 .inner_list ul li {
   position: relative;
 }
-p .ex_code {
-  position: absolute;
-  padding: 2px;
-  border: #ff0000 solid 2px;
-  right: 0;
-  top: 0;
-  /*background-color: #838487;*/
+pre {
+  width: 100px;
   display: block;
+  color: #000;
 }
-/*.inner_list li::after .ex_code{
-  display: block;
-}*/

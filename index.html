@@ -63,28 +63,175 @@
             <li>First ruby program - Hello World
               <ul class="inner_list">
                 <li>Helloworld.rb - Thực hiện lệnh puts
-                  <p class="ex_code">
+                  <pre class="ex_code">
                     puts "Hello World"
-                  </p>
+                  </pre>
                 </li>
                 <li>Helloworldstring.rb - Thực hiện lệnh puts thông qua khai báo string
-                  <p class="ex_code">
-                    hello = "Hello World!"<br>
-		                puts "Hello World!"
-                  </p>
+                  <pre class="ex_code">
+                    hello = "Hello World!"
+                    puts hello
+                  </pre>
                 </li>
                 <li>Helloworldmethod.rb - Thực hiện bằng cách define method để puts string
-                  <p class="ex_code">
-                    def greeting(hello)<br>
-                      puts hello<br>
-                    end<br>
+                  <pre class="ex_code">
+                    def greeting(hello)
+                      puts hello
+                    end
                     greeting("Hello World!")
-                  </p>
+                  </pre>
 
                 </li>
               </ul>
             </li>
           </ul>
+        </li>
+        <li>Working with Strings (lecture 18)
+          <ul class="list">
+            <li>Command 'irb' con terminal to play with code</li>
+            <li>xxx.methods to display all the methods used with object xxx</li>
+            <li>xxx.class to display xxx's class</li>
+          </ul>
+        </li>
+        <li>Working with Numbers (lecture 20)
+          <ul class="list">
+            <li>Bình thường các số có kiểu Integer, khi muốn thực hiện phép toán ra kết qua float có nhiều cách:
+              <pre class="ex_code">
+                puts 20/3.to_f
+
+                puts 20.0/3
+              </pre>
+            </li>
+            <li>Các method tương tự: to_i (integer), to_s (string)</li>
+            <li>(num).times {do smt}: do smt num times</li>
+          </ul>
+        </li>
+        <li>Method and Branching (lecture 23)
+          <ul class="list">
+            <li>Khai báo một method:
+              <pre class="ex_code">
+                def
+
+                end
+              </pre>
+            </li>
+            <li>Branching:
+              <pre class="ex_code">
+                if #condition
+                  #do st
+                elsif #condition
+                  #do st
+                .
+                .
+                else
+                  #do st
+                end
+              </pre>
+            </li>
+          </ul>
+        </li>
+        <li>Array and Iterators (lecture 25)
+          <ul class="list">
+            <li>Mảng trong ruby có thể lưu trữ các object có kiểu dữ liệu khác nhau</li>
+            <li>Một số method dùng với mảng:
+              <ul class="inner_list">
+                <li>to_a: đưa về mảng
+                  <pre class="ex_code">
+                    x = (2..5).to_a
+
+                    => x = [2,3,4,5]
+                  </pre>
+                </li>
+                <li>shuffle: tráo vị trí trong mảng</li>
+                <li>shuffle!: tráo vị trí và update vào mảng</li>
+                <li>x << 3 hoặc push(3): thêm 3 vào vị trí tiếp theo trong mảng</li>
+                <li>unshift(3): thêm 3 vào đầu mảng</li>
+                <li>uniq: loại bỏ object trùng lặp trong mảng
+                  <pre class="ex_code">
+                    x = [3,6,7,2,7,1,3]
+                    x.uniq!
+
+                    =>x = [3,6,7,2,1]
+                  </pre>
+                </li>
+                <li>each: thực hiện lệnh với từng giá trị trong mảng:
+                  <pre class="ex_code">
+                    x.each {|toan| puts toan}
+
+                    => 3
+                    6
+                    7
+                    2
+                    1
+                  </pre>
+                </li>
+                <li>odd?, even?: kiểm tra tính chẵn lẻ</li>
+                <li>join: nối các phần tử trong mảng
+                  <pre class="ex_code">
+                    x.join '+'
+
+                    => 3+6+7+2+1
+                  </pre>
+                </li>
+                <li>select {}: select các giá trị trong mảng có điều kiện trong {}
+                  <pre class="ex_code">
+                    x.select {|toan| toan < 3}
+
+                    => [1,2]
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Hashes (lecture 27)
+          <ul class="list">
+            <li>Cách tạo một hash:
+              <ul class="inner_list">
+                <li>C1:
+                  <pre class="ex_code">
+                    myhash = {'a' => 1, 'b' => 2, 'c' => 3}
+                  </pre>
+                </li>
+                <li>C2:
+                  <pre class="ex_code">
+                    myhash = {a: 1, b: 2,c: 3}
+                  </pre>
+                </li>
+              </ul>
+            </li>
+            <li>Để truy nhập vào hash:
+              <pre class="ex_code">
+                myhash['a']
+              </pre>
+              <pre class="ex_code">
+                myhash[:a]
+              </pre>
+            </li>
+            <li>Để xóa một giá trị trong hash
+              <pre class="ex_code">
+                myhash.delete('a')
+              </pre>
+            </li>
+
+          </ul>
+        </li>
+        <li>Introduction to Object Oriented Programming (lecture 37)
+          <ul class="list">
+              <li>
+                Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design and program applications
+                <ul class="inner_list">
+                  <li>Encapsulation - concept of blocking off areas of code and not making it available to the rest of the program</li>
+                  <li>Abstraction - is simplifying a complex process of a program, an enterprise software solution for example by modeling classes appropriate for it</li>
+                  <li>Inheritance - is used where a class inherits the behavior of another class, referred to as the superclass</li>
+                  <li>Polymorphism - is when a class inherits the behaviors of another class, but has the ability to not inherit everything and change some of it’s inherited behaviors. For example to write a method that does something differently from the inherited method</li>
+                </ul>
+              </li>
+              <li>Classes - It is a blueprint that describes the state and behavior that the objects of the class all share. A class can be used to create many objects. Objects created at runtime from a class are called instances of that particular class.</li>
+              <li>Module - is a collection of methods and constants. The methods in a module may be instance methods or module methods. Instance methods appear as methods in a class when the module is included, module methods do not. Conversely, module methods may be called without creating an encapsulating object, while instance methods may not.</li>
+          </ul>
+
+
         </li>
       </ol>
     </div>
